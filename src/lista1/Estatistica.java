@@ -31,6 +31,22 @@ public class Estatistica {
 		return soma / count;
 	}
 	
+	public void parImpar(int maiorValor) {
+		String par_impar = "";
+		int count = 1;
+		while(count <= maiorValor) {
+			if (count % 2 == 0) {
+				par_impar = " é Par";
+				System.out.println(count + par_impar);
+			}
+			else {
+				par_impar = " é Impar";
+				System.out.println(count + par_impar);
+			}
+			count++;
+		}
+	  
+	}
 	
 
 	public static void main(String[] args) {
@@ -44,6 +60,7 @@ public class Estatistica {
 		
 		System.out.println(estatistica.somatorio(maiorNumero));
 		System.out.println(estatistica.media(maiorNumero));
+		estatistica.parImpar(maiorNumero);
 		
 		
 		input.close();
