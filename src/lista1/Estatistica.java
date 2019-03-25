@@ -32,23 +32,18 @@ public class Estatistica {
 	}
 	
 	public void parImpar(int maiorValor) {
-		String par_impar = "";
 		int count = 1;
 		while(count <= maiorValor) {
 			if (count % 2 == 0) {
-				par_impar = " é Par";
-				System.out.println(count + par_impar);
+				System.out.println(count + " é Par");
 			}
 			else {
-				par_impar = " é Impar";
-				System.out.println(count + par_impar);
+				System.out.println(count + " é Impar");
 			}
 			count++;
-		}
-	  
+		}  
 	}
 	
-
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
