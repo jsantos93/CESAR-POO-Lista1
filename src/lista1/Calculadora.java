@@ -28,10 +28,10 @@ public class Calculadora {
 		char operacao;
 		
 		System.out.println("Primeiro, digite qual operação vc deseja realizar ");
-		System.out.println("Para somar [+]"); //43
-		System.out.println("Para subtrair [-]");// 45
-		System.out.println("Para multiplicar [*]");// 42
-		System.out.println("Para dividir [/]"); //47
+		System.out.println("Para somar [+]"); 
+		System.out.println("Para subtrair [-]");
+		System.out.println("Para multiplicar [*]");
+		System.out.println("Para dividir [/]"); 
 		
 		operacao = input.next().charAt(0);
 		
@@ -40,13 +40,13 @@ public class Calculadora {
 		numero1 = input.nextFloat();
 		numero2 = input.nextFloat();
 		
-		if (operacao == 43){
+		if (operacao == '+'){
 			System.out.println(calcular.somar(numero1, numero2));
 		}
-		else if (operacao == 45) {
+		else if (operacao == '-') {
 			System.out.println(calcular.subtrair(numero1, numero2));
 		}
-		else if(operacao == 42) {
+		else if(operacao == '*') {
 			System.out.println(calcular.multiplicar(numero1, numero2));
 		}
 		else {
