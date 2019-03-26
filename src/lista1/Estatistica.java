@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Estatistica {
 	
-	int maiorValor;
+	private int maiorValor;
 	
 	
 	public Estatistica (int maiorValor) {
@@ -20,15 +20,25 @@ public class Estatistica {
 		return soma;
 	}
 	
-	public int media (int maiorValor) {
-		int soma = 0;
-		int count =-1;
+	public float media (int maiorValor) {
+		float soma = 0;
+		float count =-1;
 		
 		for (int i = 0; i <= maiorValor; i++) {
 			soma += i;
 			count ++;
 		}
 		return soma / count;
+	}
+	
+	public double variancia(int maiorValor) {
+		double variancia = 0;
+		double count = 1;
+		for(double i = 0; i < maiorValor; i++) {
+			variancia = variancia + Math.pow((count - this.media(maiorValor)), 2);
+			count++;
+		}
+		return variancia/count;
 	}
 	
 	public void parImpar(int maiorValor) {
@@ -55,6 +65,7 @@ public class Estatistica {
 		
 		System.out.println(estatistica.somatorio(maiorNumero));
 		System.out.println(estatistica.media(maiorNumero));
+		System.out.println(estatistica.variancia(maiorNumero));
 		estatistica.parImpar(maiorNumero);
 		
 		

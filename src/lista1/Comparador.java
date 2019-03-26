@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Comparador {
 
-	 int numero1;
-	 int numero2;
-	 int numero3;
+	 private int numero1;
+	 private int numero2;
+	 private int numero3;
 		
 	
 	public int getNumero1() {

@@ -28,7 +28,7 @@ public class Calculadora {
 		char operacao;
 		
 		System.out.println("Primeiro, digite qual operação vc deseja realizar ");
-		System.out.println("Para somar [+]"); 
+		System.out.println("Para somar [+]");
 		System.out.println("Para subtrair [-]");
 		System.out.println("Para multiplicar [*]");
 		System.out.println("Para dividir [/]"); 
@@ -49,9 +49,12 @@ public class Calculadora {
 		else if(operacao == '*') {
 			System.out.println(calcular.multiplicar(numero1, numero2));
 		}
-		else {
+		else if (operacao == '/'){
 			System.out.println(calcular.dividir(numero1, numero2));
-		}	
+		}
+		else {
+			System.out.println("Operação Inválilda");
+		}
 		input.close();
 	}
 	

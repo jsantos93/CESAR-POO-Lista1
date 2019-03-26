@@ -2,19 +2,19 @@ package lista1;
 
 public class Medidas {
 	
-	String 	unidadeDeDistancia;
-	float distancia;
-	String unidadeDeMassa;
-	float massa;
-	String unidadeDeTemperatura;
-	int temperatura;
+	private String 	unidadeDeDistancia;
+	private double distancia;
+	private String unidadeDeMassa;
+	private double massa;
+	private String unidadeDeTemperatura;
+	private int temperatura;
 
 	
 	public Medidas() {
 		
 	}
 	
-	public Medidas(String unidadeDeDistancia, float distancia, String unidadeDeMassa, float massa, String unidadeDeTemperatura, int temperatura) {
+	public Medidas(String unidadeDeDistancia, double distancia, String unidadeDeMassa, double massa, String unidadeDeTemperatura, int temperatura) {
 		this.unidadeDeDistancia = unidadeDeDistancia;
 		this.distancia = distancia;
 		this.unidadeDeMassa = unidadeDeMassa;
@@ -23,7 +23,7 @@ public class Medidas {
 		this.temperatura = temperatura;
 	}
 	
-	
+
 	public String getUnidadeDeDistancia() {
 		return unidadeDeDistancia;
 	}
@@ -32,11 +32,11 @@ public class Medidas {
 		this.unidadeDeDistancia = unidadeDeDistancia;
 	}
 
-	public float getDistancia() {
+	public double getDistancia() {
 		return distancia;
 	}
 
-	public void setDistancia(float distancia) {
+	public void setDistancia(double distancia) {
 		this.distancia = distancia;
 	}
 
@@ -48,11 +48,11 @@ public class Medidas {
 		this.unidadeDeMassa = unidadeDeMassa;
 	}
 
-	public float getMassa() {
+	public double getMassa() {
 		return massa;
 	}
 
-	public void setMassa(float massa) {
+	public void setMassa(double massa) {
 		this.massa = massa;
 	}
 
@@ -70,11 +70,6 @@ public class Medidas {
 
 	public void setTemperatura(int temperatura) {
 		this.temperatura = temperatura;
-	}
-
-	public static void main(String[] args) {
-		
-
 	}
 
 }
