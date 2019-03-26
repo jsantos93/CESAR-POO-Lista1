@@ -54,6 +54,14 @@ public class Estatistica {
 		}  
 	}
 	
+	public void setMaiorValor(int maiorValor) {
+		this.maiorValor = maiorValor;
+	}
+	
+	public int getMaiorValor() {
+		return maiorValor;
+	}
+	
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
