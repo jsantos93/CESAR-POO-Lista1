@@ -10,7 +10,7 @@ public class Estatistica {
 		this.maiorValor = maiorValor;
 	}
 	
-	public int somatorio(int maiorValor) {
+	public int somatorio() {
 		int soma = 0;
 		int contador = 0;
 		while(contador <= maiorValor) {
@@ -20,7 +20,7 @@ public class Estatistica {
 		return soma;
 	}
 	
-	public float media (int maiorValor) {
+	public float media () {
 		float soma = 0;
 		float count =-1;
 		
@@ -31,17 +31,17 @@ public class Estatistica {
 		return soma / count;
 	}
 	
-	public double variancia(int maiorValor) {
+	public double variancia() {
 		double variancia = 0;
 		double count = 1;
 		for(double i = 0; i < maiorValor; i++) {
-			variancia = variancia + Math.pow((count - this.media(maiorValor)), 2);
+			variancia = variancia + Math.pow((count - this.media()), 2);
 			count++;
 		}
 		return variancia/count;
 	}
 	
-	public void parImpar(int maiorValor) {
+	public void parImpar() {
 		int count = 1;
 		while(count <= maiorValor) {
 			if (count % 2 == 0) {
@@ -71,10 +71,10 @@ public class Estatistica {
 		
 		Estatistica estatistica = new Estatistica(maiorNumero);
 		
-		System.out.println(estatistica.somatorio(maiorNumero));
-		System.out.println(estatistica.media(maiorNumero));
-		System.out.println(estatistica.variancia(maiorNumero));
-		estatistica.parImpar(maiorNumero);
+		System.out.println(estatistica.somatorio());
+		System.out.println(estatistica.media());
+		System.out.println(estatistica.variancia());
+		estatistica.parImpar();
 		
 		
 		input.close();
