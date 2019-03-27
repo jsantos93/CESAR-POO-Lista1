@@ -29,13 +29,13 @@ public class Estatistica {
 			count++;
 		} while(count <= maiorValor);
 		
-		return soma / count;
+		return soma / maiorValor;
 	}
 	
 	public double variancia() {
 		double variancia = 0;
-		double count = 1;
-		for(double i = 0; i < maiorValor; i++) {
+		double count = 0;
+		for(double i = 0; i <= maiorValor; i++) {
 			variancia = variancia + Math.pow((count - this.media()), 2);
 			count++;
 		}
@@ -72,9 +72,9 @@ public class Estatistica {
 		
 		Estatistica estatistica = new Estatistica(maiorNumero);
 		
-		System.out.println(estatistica.somatorio());
-		System.out.println(estatistica.media());
-		System.out.println(estatistica.variancia());
+		System.out.println("Somatório = " + estatistica.somatorio());
+		System.out.println("Média = " + estatistica.media());
+		System.out.println("Variancia = " + estatistica.variancia());
 		estatistica.parImpar();
 		
 		
