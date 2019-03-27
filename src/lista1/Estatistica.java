@@ -22,12 +22,13 @@ public class Estatistica {
 	
 	public float media () {
 		float soma = 0;
-		float count =-1;
+		float count = 0;
 		
-		for (int i = 0; i <= maiorValor; i++) {
-			soma += i;
-			count ++;
-		}
+		do {
+			soma += count;
+			count++;
+		} while(count <= maiorValor);
+		
 		return soma / count;
 	}
 	
